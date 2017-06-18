@@ -1,0 +1,40 @@
+/* import colors */
+:import("../../../../styles/variables.scss") {
+    colorPrimary: colorPrimary;
+    colorBgLight: colorBgLight;
+}
+
+:local(.SpinnerWrapper) {
+    padding-bottom: 10px;
+
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+
+    .Text {
+        display: inline-block;
+        padding-top: 2px;
+
+        margin-right: 7px;
+        vertical-align: top;
+
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .Spinner {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+
+        vertical-align: top;
+
+        border: 3px solid colorBgLight;
+        border-top-color: colorPrimary;
+        border-radius: 50%;
+
+        :global {
+            animation: spin 850ms linear infinite;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/* import colors */
+:import("../../styles/variables.scss") {
+    colorBgLight: colorBgLight
+}
+
+:local(.Box) {
+    padding: 35px;
+
+    background-color: colorBgLight;
+}

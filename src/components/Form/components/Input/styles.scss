@@ -1,0 +1,29 @@
+/* import colors */
+:import("../../../../styles/variables.scss") {
+    colorBorder: colorBorder;
+    colorPrimary: colorPrimary;
+    colorError: colorError;
+}
+
+:local(.Input) {
+    padding: 10px 12px;
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid colorBorder;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    background-color: white;
+
+    line-height: 20px;
+
+    &:focus,
+    &:active {
+        border-color: colorPrimary;
+        outline: 0;
+    }
+
+    &.invalid {
+        border-color: colorError;
+    }
+}

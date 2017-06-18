@@ -1,0 +1,49 @@
+/* import variables */
+:import("../../../../../../styles/variables.scss") {
+    colorPrimary: colorPrimary;
+}
+
+:local(.SwapButton) {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    &:after,
+    &:before {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: 11px;
+
+        border: 14px solid transparent;
+    }
+
+    &:before {
+        right: -5px;
+
+        border-left-color: black;
+    }
+
+    &:after {
+        left: -5px;
+
+        border-right-color: black;
+    }
+
+    &:hover {
+        &:before {
+            border-left-color: colorPrimary;
+        }
+
+        &:after {
+            border-right-color: colorPrimary;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/* import colors */
+:import("../../../../styles/variables.scss") {
+    colorBorder: colorBorder;
+    colorPrimary: colorPrimary;
+}
+
+:local(.DropdownItem) {
+    background-color: transparent;
+    //border-top: 1px solid colorBorder;
+}
+
+:local(.DropdownButton) {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+
+    line-height: 20px;
+
+    cursor: pointer;
+
+    &.active {
+        color: colorPrimary;
+    }
+
+    &:hover {
+        opacity: 0.75;
+    }
+}

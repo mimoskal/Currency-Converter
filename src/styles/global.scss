@@ -1,0 +1,47 @@
+:import("./variables.scss") {
+    fontPrimary: fontPrimary;
+    colorBorder: colorBorder;
+}
+
+:global {
+    body {
+        background-color: white;
+
+        font-family: fontPrimary, sans-serif;
+    }
+
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    form {
+        ::-webkit-input-placeholder {
+            color: colorBorder;
+        }
+        ::-moz-placeholder {
+            color: colorBorder;
+        }
+        :-ms-input-placeholder {
+            color: colorBorder;
+        }
+        :-moz-placeholder {
+            color: colorBorder;
+        }
+    }
+
+    button {
+        padding: 0;
+
+        border: 0;
+        background-color: transparent;
+
+        text-align: inherit;
+
+        &:focus,
+        &:active {
+            outline: 0;
+        }
+    }
+}
+
+@keyframes :global(spin) { 100% { transform:rotate(360deg); } }

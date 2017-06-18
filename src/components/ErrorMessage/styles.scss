@@ -1,0 +1,16 @@
+/* import variables */
+:import("../../styles/variables.scss") {
+    colorError: colorError;
+}
+
+:local(.ErrorMessage) {
+    padding: 8px 15px;
+
+    margin-bottom: 20px;
+
+    background-color: colorError;
+    color: white;
+    border-radius: 5px;
+
+    line-height: 20px;
+}

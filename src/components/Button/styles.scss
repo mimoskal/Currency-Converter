@@ -1,0 +1,29 @@
+/* import variables */
+:import("../../styles/variables.scss") {
+    colorPrimary: colorPrimary;
+    colorPrimaryDark: colorPrimaryDark;
+}
+
+:local(.Button) {
+    padding: 10px 15px 8px;
+
+    background-color: colorPrimary;
+    box-shadow: 0 2px colorPrimaryDark;
+    border: 0;
+    border-radius: 5px;
+
+    color: white;
+    letter-spacing: 0.05em;
+
+    line-height: 20px;
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}

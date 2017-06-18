@@ -1,0 +1,15 @@
+:local(.PrimaryLayout) {
+    display: flex;
+    height: 100vh;
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: center;
+}
+
+:local(.PrimaryLayoutInner) {
+    position: relative;
+    flex: 0 1 800px;
+}
