@@ -28,6 +28,14 @@ export function ratesResult(result) {
   };
 }
 
+/**
+ * Calculate value based on given currency and amount.
+ *
+ * @param data {Object}
+ * @param to {String}
+ * @param amount {Number}
+ * @returns {function(*)}
+ */
 export function ratesCalculate(data, to, amount) {
   return (dispatch) => {
     const { rates } = data;
@@ -53,7 +61,14 @@ export function ratesCalculate(data, to, amount) {
   };
 }
 
-
+/**
+ * Perform API call to retrieve currency rates.
+ *
+ * @param from {String}
+ * @param to {String}
+ * @param amount {Number}
+ * @returns {function(*)}
+ */
 export function ratesFetch(from, to, amount) {
   return (dispatch) => {
     dispatch(ratesLoading(true));
