@@ -21,7 +21,7 @@ Sample React app.
 ### Component Structure
 
 ```
-src
+.
 ├── components
 │   ├── Box
 │   ├── Button

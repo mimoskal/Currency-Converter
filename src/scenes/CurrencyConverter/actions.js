@@ -31,10 +31,10 @@ export function ratesResult(result) {
 /**
  * Calculate value based on given currency and amount.
  *
- * @param data {Object}
- * @param to {String}
- * @param amount {Number}
- * @returns {function(*)}
+ * @param {Object} data - data object received from API.
+ * @param {string} to - wanted currency (abbreviation).
+ * @param {number} amount - given currency amount.
+ * @returns {function(*)} - appropriate dispatch function.
  */
 export function ratesCalculate(data, to, amount) {
   return (dispatch) => {
@@ -64,10 +64,10 @@ export function ratesCalculate(data, to, amount) {
 /**
  * Perform API call to retrieve currency rates.
  *
- * @param from {String}
- * @param to {String}
- * @param amount {Number}
- * @returns {function(*)}
+ * @param {string} from - given currency (abbreviation).
+ * @param {string} to - wanted currency (abbreviation).
+ * @param {number} amount - given currency amount.
+ * @returns {function(*)} - appropriate dispatch function.
  */
 export function ratesFetch(from, to, amount) {
   return (dispatch) => {
