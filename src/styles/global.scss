@@ -1,6 +1,7 @@
 :import("./variables.scss") {
     fontPrimary: fontPrimary;
     colorBorder: colorBorder;
+    colorPrimary: colorPrimary;
 }
 
 :global {
@@ -45,6 +46,11 @@
         &:active {
             outline: 0;
         }
+    }
+
+    a {
+        color: colorPrimary;
+        text-decoration: none;
     }
 }
 
