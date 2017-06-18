@@ -5,25 +5,27 @@
     colorError: colorError;
 }
 
-:local(.Input) {
-    padding: 10px 12px;
-    width: 100%;
-    box-sizing: border-box;
+:local {
+    .Input {
+        padding: 10px 12px;
+        width: 100%;
+        box-sizing: border-box;
 
-    border: 1px solid colorBorder;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    background-color: white;
+        border: 1px solid colorBorder;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        background-color: white;
 
-    line-height: 20px;
+        line-height: 20px;
 
-    &:focus,
-    &:active {
-        border-color: colorPrimary;
-        outline: 0;
+        &:focus,
+        &:active {
+            border-color: colorPrimary;
+            outline: 0;
+        }
     }
 
-    &.invalid {
+    .invalid {
         border-color: colorError;
     }
 }

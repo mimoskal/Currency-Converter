@@ -27,7 +27,7 @@ function DropdownItem({ item, active, onChange }) {
   }
 
   return (
-    <li styleName="DropdownItem">
+    <li>
       <button onClick={handleClick} styleName={`DropdownButton ${active ? 'active' : ''}`}>
         {item}
       </button>

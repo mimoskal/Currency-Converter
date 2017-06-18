@@ -4,12 +4,14 @@
     colorBgLight: colorBgLight;
 }
 
-:local(.SpinnerWrapper) {
-    padding-bottom: 10px;
+:local {
+    .SpinnerWrapper {
+        padding-bottom: 10px;
 
-    position: absolute;
-    bottom: 100%;
-    right: 0;
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+    }
 
     .Text {
         display: inline-block;
